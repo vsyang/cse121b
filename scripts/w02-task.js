@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function () {
     /* Step 2 - Variables */
     let fullName = 'Vanessa Yang'; 
     const currentYear = new Date().getFullYear(); 
-    let profilePicture = 'images/yourprofileimagename.png'; 
+    let profilePicture = 'images/me1.jpeg'; 
     
     /* Step 3 - Element Variables */
     const nameElement = document.getElementById('name'); 
