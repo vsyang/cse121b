@@ -1,14 +1,12 @@
-import aCourse from "./Course";
+// modules.js
+import aCourse from "./Course.js";
 
-aCourse.inut();
+aCourse.init();
 document.querySelector("#enrollStudent").addEventListener("click", function () {
-    const sectionNum = document.querySelector("#sectionNumber").value;
-    aCourse.changeEnrollment(sectionNum);
+  const sectionNum = document.querySelector("#sectionNumber").value;
+  aCourse.changeEnrollment(sectionNum);
 });
 document.querySelector("#dropStudent").addEventListener("click", function () {
-    const sectionNum = document.querySelector("#sectionNumber").value;
-    aCourse.changeEnrollment(sectionNum, false);
+  const sectionNum = document.querySelector("#sectionNumber").value;
+  aCourse.changeEnrollment(sectionNum, false);
 });
-  
-// setCourseInfo(aCourse);
-// renderSections(aCourse.sections);
