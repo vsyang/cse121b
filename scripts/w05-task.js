@@ -4,7 +4,7 @@
 const templesElement = document.querySelector("#temples");
 let templeList = [];
 /* async displayTemples Function */
-const displayTemples = (temples) => {
+const displayTemples = async(temples) => {
     temples.forEach((temple) => {
         const article = document.createElement("article");
         

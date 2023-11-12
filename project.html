@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Final Project</title>
+    <meta name="author" content="Vanessa Yang">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+
+<body>
+    <nav>
+        <ul id="menu">
+          <li><a id="toggleMenu">&equiv;</a></li>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="w01-task.html">W1 Task</a></li>
+          <li><a href="w03-task.html">W3 Task</a></li>
+          <li><a href="w04-task.html">W4 Task</a></li>
+          <li><a href="w05-task.html">W5 Task</a></li>
+          <li><a href="project.html"class="active">Project</a></li>
+        </ul>
+      </nav> 
+      
+      <main>
+        <h1>Final Project</h1>
+
+        <select id="sort" title="Select first initial.">
+            <option value="a-c">A - C</option>
+            <option value="d-f">D - F</option>
+            <option value="g-i">G - I</option>
+            <option value="j-l">J - L</option>
+            <option value="m-o">M - O</option>
+            <option value="p-r">P - R</option>
+            <option value="s-u">S - U</option>
+            <option value="v-z">V - Z</option>
+            <option value="all">View All</option>           
+        </select>
+
+        <div id="dogs">
+
+        </div>
+      </main>
+
+      <footer>
+        &copy;<span id="year"></span> | Final Project | CSE 121b
+      </footer>
+      <script src="scripts/main.js"></script>
+      <script>
+        document.getElementById("year").innerHTML = new Date().getFullYear();
+      </script>
+      <script src="scripts/project.js"></script>
+</body>
+
+</html>
