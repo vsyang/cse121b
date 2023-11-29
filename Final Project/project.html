@@ -3,32 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Final Project</title>
+    <title>Oh! That One Dog</title>
     <meta name="author" content="Vanessa Yang">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap"
       rel="stylesheet">
-    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="../styles/main.css">
 </head>
 
 <body>
     <nav>
         <ul id="menu">
           <li><a id="toggleMenu">&equiv;</a></li>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="w01-task.html">W1 Task</a></li>
-          <li><a href="w03-task.html">W3 Task</a></li>
-          <li><a href="w04-task.html">W4 Task</a></li>
-          <li><a href="w05-task.html">W5 Task</a></li>
-          <li><a href="project.html"class="active">Project</a></li>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../w01-task.html">W1 Task</a></li>
+          <li><a href="../w03-task.html">W3 Task</a></li>
+          <li><a href="../w04-task.html">W4 Task</a></li>
+          <li><a href="../w05-task.html">W5 Task</a></li>
+          <li><a href="Final Project/project.html"class="active">Project</a></li>
         </ul>
       </nav> 
       
-      <main>
-        <h1>Final Project</h1>
+      <main id="gridly">
+        <h1>Oh! That One Dog</h1>
 
-        <select id="sort" title="Select first initial.">
+        <select id="sortBy" title="Select first initial.">
+          <option value="" disabled selected>Click here to begin</option>
             <option value="a-c">A - C</option>
             <option value="d-f">D - F</option>
             <option value="g-i">G - I</option>
@@ -48,11 +49,11 @@
       <footer>
         &copy;<span id="year"></span> | Final Project | CSE 121b
       </footer>
-      <script src="scripts/main.js"></script>
+      <!-- <script src="scripts/main.js"></script> -->
       <script>
         document.getElementById("year").innerHTML = new Date().getFullYear();
       </script>
-      <script src="scripts/project.js"></script>
+      <script src="/Final Project/project.js"></script>
 </body>
 
 </html>
