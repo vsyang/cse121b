@@ -17,12 +17,22 @@ const displayDogs = async(dogs) => {
         img.src = dog.image.url;
         img.alt = dog.name;
 
-        const h2 = document.createElement("h5")
-        h2.textContent = dog.temperament;
+        const temperament = document.createElement("h5");
+        temperament.textContent = dog.temperament;
+        
+        const weight = document.createElement("h5");
+        let dogWeight = dog.weight.imperial;
+        weight.innerHTML += `<br>Average weight: ${dogWeight} lbs`;
+
+        const height = document.createElement("h5");
+        let dogHeight = dog.height.imperial;
+        height.innerHTML += `Average height: ${dogHeight}"`
 
         article.appendChild(h3);
         article.appendChild(img);
-        article.appendChild(h2);
+        article.appendChild(temperament);
+        article.appendChild(weight);
+        article.appendChild(height);
         dogsElement.appendChild(article);
     });
 };
