@@ -17,8 +17,8 @@ const displayDogs = async(dogs) => {
         img.src = dog.image.url;
         img.alt = dog.name;
 
-        const h2 = document.createElement("h6")
-        h2.textContent = dog.temperament;        ;
+        const h2 = document.createElement("h5")
+        h2.textContent = dog.temperament;
 
         article.appendChild(h3);
         article.appendChild(img);
@@ -38,14 +38,6 @@ const getDogs = async() => {
     dogList = data;
     displayDogs(dogList);
 }
-
-/* getImages Function */
-// const getImages = () => {
-//     const imageUrl = `https://cdn2.thedogapi.com/images/${reference_image_id}.jpg`
-//     let image = reference_image_id;
-//     return image;
-// };
-
 
 /* reset Function */
 const reset = () => {
